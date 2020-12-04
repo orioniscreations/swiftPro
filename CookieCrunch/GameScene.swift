@@ -107,7 +107,8 @@ class GameScene: SKScene {
         
         // Values 0 (no tiles), 6 and 9 (two opposite tiles) are not drawn.
         if value != 0 && value != 6 && value != 9 {
-          let name = String(format: "Tile_%ld", value)
+          let name = "Tile_15"
+//          let name = String(format: "Tile_%ld", value)
           let tileNode = SKSpriteNode(imageNamed: name)
           tileNode.size = CGSize(width: tileWidth, height: tileHeight)
           var point = pointFor(column: column, row: row)
